@@ -1,9 +1,9 @@
 <template>
   <div class="page row">
-    <div class="col-md-10">
+    <div class="col-md-12 mx-auto">
       <InputSearch v-model="searchText" />
     </div>
-    <div class="mt-3 col-md-6">
+    <div class="mt-3 col-6">
       <h4>
         Danh bạ
         <i class="fas fa-address-book"></i>
@@ -29,7 +29,7 @@
         </button>
       </div>
     </div>
-    <div class="mt-3 col-md-6">
+    <div class="mt-3 col-6">
       <div v-if="activeContact">
         <h4>
           Chi tiết Liên hệ
@@ -136,6 +136,7 @@ export default {
 <style scoped>
 .page {
   text-align: left;
-  max-width: 750px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>
